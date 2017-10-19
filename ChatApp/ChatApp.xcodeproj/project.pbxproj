@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FDA3BBA3BDAE309851D5215 /* Pods_ChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F48B0722DFF0FE7CC6CBA34 /* Pods_ChatAppUITests.framework */; };
+		43028BAA1F987DC400E4E9BF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 431BE75D1F90D43B0071CFFC /* SWRevealViewController.m */; };
 		439AC4D11F8FB6600051F1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439AC4D01F8FB6600051F1EB /* AppDelegate.swift */; };
 		439AC4D61F8FB6600051F1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439AC4D41F8FB6600051F1EB /* Main.storyboard */; };
 		439AC4D81F8FB6600051F1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439AC4D71F8FB6600051F1EB /* Assets.xcassets */; };
@@ -491,6 +492,7 @@
 				43E27DA51F9259D50024816A /* ChatVC.swift in Sources */,
 				43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */,
 				439AC4D11F8FB6600051F1EB /* AppDelegate.swift in Sources */,
+				43028BAA1F987DC400E4E9BF /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +696,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QJ2N4B8BP;
 				INFOPLIST_FILE = ChatAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nothing.ChatAppTests;
@@ -711,6 +714,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QJ2N4B8BP;
 				INFOPLIST_FILE = ChatAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nothing.ChatAppTests;
