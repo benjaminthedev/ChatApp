@@ -16,6 +16,7 @@
 		439AC4DB1F8FB6600051F1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439AC4D91F8FB6600051F1EB /* LaunchScreen.storyboard */; };
 		439AC4E61F8FB6600051F1EB /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439AC4E51F8FB6600051F1EB /* ChatAppTests.swift */; };
 		439AC4F11F8FB6600051F1EB /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439AC4F01F8FB6600051F1EB /* ChatAppUITests.swift */; };
+		43D4CF641F9B87EE00558414 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4CF631F9B87EE00558414 /* Constants.swift */; };
 		43E27DA51F9259D50024816A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E27DA41F9259D50024816A /* ChatVC.swift */; };
 		43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E27DA61F9259E30024816A /* ChannelVC.swift */; };
 		8EC0AE2A2A0B17915DE3EA49 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E328788D7B085CBBE80E25F5 /* Pods_ChatApp.framework */; };
@@ -59,6 +60,7 @@
 		439AC4EC1F8FB6600051F1EB /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		439AC4F01F8FB6600051F1EB /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		439AC4F21F8FB6600051F1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D4CF631F9B87EE00558414 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43E27DA41F9259D50024816A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		43E27DA61F9259E30024816A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		4C4BAAB5414AB4567B157816 /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 		439AC4CF1F8FB6600051F1EB /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				43D4CF621F9B87CC00558414 /* Util */,
 				43E27DA21F92598E0024816A /* Model */,
 				43E27DA31F9259930024816A /* View */,
 				43E27DA11F9259850024816A /* Controller */,
@@ -184,6 +187,14 @@
 				439AC4F21F8FB6600051F1EB /* Info.plist */,
 			);
 			path = ChatAppUITests;
+			sourceTree = "<group>";
+		};
+		43D4CF621F9B87CC00558414 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				43D4CF631F9B87EE00558414 /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		43E27DA11F9259850024816A /* Controller */ = {
@@ -292,7 +303,7 @@
 					};
 					439AC4E01F8FB6600051F1EB = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 439AC4CC1F8FB65F0051F1EB;
 					};
 					439AC4EB1F8FB6600051F1EB = {
@@ -497,6 +508,7 @@
 				43028BAC1F98845000E4E9BF /* GradientView.swift in Sources */,
 				439AC4D11F8FB6600051F1EB /* AppDelegate.swift in Sources */,
 				43028BAA1F987DC400E4E9BF /* SWRevealViewController.m in Sources */,
+				43D4CF641F9B87EE00558414 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,12 +711,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4QJ2N4B8BP;
 				INFOPLIST_FILE = ChatAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nothing.ChatAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatApp.app/ChatApp";
@@ -717,12 +731,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4QJ2N4B8BP;
 				INFOPLIST_FILE = ChatAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nothing.ChatAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatApp.app/ChatApp";
