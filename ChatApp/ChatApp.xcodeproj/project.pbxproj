@@ -10,6 +10,7 @@
 		3FDA3BBA3BDAE309851D5215 /* Pods_ChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F48B0722DFF0FE7CC6CBA34 /* Pods_ChatAppUITests.framework */; };
 		43028BAA1F987DC400E4E9BF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 431BE75D1F90D43B0071CFFC /* SWRevealViewController.m */; };
 		43028BAC1F98845000E4E9BF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43028BAB1F98845000E4E9BF /* GradientView.swift */; };
+		43152B541FA0C2FC00F50CCF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43152B531FA0C2FC00F50CCF /* LoginVC.swift */; };
 		439AC4D11F8FB6600051F1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439AC4D01F8FB6600051F1EB /* AppDelegate.swift */; };
 		439AC4D61F8FB6600051F1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439AC4D41F8FB6600051F1EB /* Main.storyboard */; };
 		439AC4D81F8FB6600051F1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439AC4D71F8FB6600051F1EB /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		33A1C1F18CF60D9F4C3673EB /* Pods-ChatAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatAppUITests/Pods-ChatAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		388FAB629505F0C78B5A2821 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		43028BAB1F98845000E4E9BF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		43152B531FA0C2FC00F50CCF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		431BE75B1F90D43A0071CFFC /* ChatApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		431BE75C1F90D43B0071CFFC /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		431BE75D1F90D43B0071CFFC /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				43E27DA41F9259D50024816A /* ChatVC.swift */,
 				43E27DA61F9259E30024816A /* ChannelVC.swift */,
+				43152B531FA0C2FC00F50CCF /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			files = (
 				43E27DA51F9259D50024816A /* ChatVC.swift in Sources */,
 				43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */,
+				43152B541FA0C2FC00F50CCF /* LoginVC.swift in Sources */,
 				43028BAC1F98845000E4E9BF /* GradientView.swift in Sources */,
 				439AC4D11F8FB6600051F1EB /* AppDelegate.swift in Sources */,
 				43028BAA1F987DC400E4E9BF /* SWRevealViewController.m in Sources */,
