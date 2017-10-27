@@ -228,7 +228,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-A8-Iac">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-A8-Iac" customClass="roundedButtons" customModule="ChatApp" customModuleProvider="target">
                                 <rect key="frame" x="62" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -239,6 +239,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -297,9 +302,10 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="Co8-gP-bD1" eventType="touchUpInside" id="7pN-WP-9RR"/>
+                                    <action selector="pickAvatarPressed:" destination="8zM-Kn-ylT" eventType="touchUpInside" id="0sB-mU-ceC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-y3-Xjh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-y3-Xjh" customClass="roundedButtons" customModule="ChatApp" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -310,6 +316,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="8zM-Kn-ylT" eventType="touchUpInside" id="Zm5-iz-8fo"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ROq-BP-4n8">
                                 <rect key="frame" x="62.5" y="121.5" width="250" height="136"/>
@@ -386,6 +400,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="Co8-gP-bD1" eventType="touchUpInside" id="A7K-Gi-sKc"/>
+                                    <action selector="pickBgColorPressed:" destination="8zM-Kn-ylT" eventType="touchUpInside" id="mvZ-j5-pIm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -410,6 +425,10 @@
                         <viewLayoutGuide key="safeArea" id="mqs-v4-VkY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="7Fb-TQ-vEQ" id="Qlp-RH-D5t"/>
+                        <outlet property="passTxt" destination="yQB-aF-dZb" id="9Dv-5T-YWe"/>
+                        <outlet property="userImg" destination="IZK-aJ-piM" id="eNA-jX-Niw"/>
+                        <outlet property="usernameTxt" destination="qBp-Uc-AR5" id="D5d-us-dg9"/>
                         <segue destination="AIN-fM-Tno" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="dfP-hc-FUG"/>
                     </connections>
                 </viewController>
