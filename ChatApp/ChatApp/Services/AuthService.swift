@@ -73,7 +73,7 @@ class AuthService{
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
             /*
-             did use responseString rather than
+             did use responseString rather than d
              responseJSON and it worked in the terminal but nothing shows up in the mongo DB
  
              */

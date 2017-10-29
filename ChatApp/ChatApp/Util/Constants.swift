@@ -11,7 +11,7 @@ import Foundation
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
 //URL CONSTANTS
-
+//Need to check slashes at the end - are these correct? Able to connect but not populate the DB :(
 let BASE_URL = "https://chattydb.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"

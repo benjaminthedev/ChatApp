@@ -10,7 +10,7 @@ import UIKit
 
 class ChatVC: UIViewController {
     
-    //outlets
+    //Outlets
 
     @IBOutlet weak var menuBtn: UIButton!
     
@@ -21,7 +21,4 @@ class ChatVC: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
     }
-
-
-
 }
