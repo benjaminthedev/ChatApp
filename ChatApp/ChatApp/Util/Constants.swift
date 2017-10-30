@@ -30,6 +30,6 @@ let USER_EMAIL = "userEmail"
 
 //Header
 let HEADER = [
-    "Content-Type" : "application/json; charset=uft-8"
+    "Content-Type" : "application/json; charset=utf-8"
 ]
 
