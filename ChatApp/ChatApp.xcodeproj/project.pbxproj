@@ -23,6 +23,7 @@
 		43D4CF641F9B87EE00558414 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4CF631F9B87EE00558414 /* Constants.swift */; };
 		43E27DA51F9259D50024816A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E27DA41F9259D50024816A /* ChatVC.swift */; };
 		43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E27DA61F9259E30024816A /* ChannelVC.swift */; };
+		43FC7BD41FB589870085DFB3 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FC7BD31FB589870085DFB3 /* UserDataService.swift */; };
 		8EC0AE2A2A0B17915DE3EA49 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E328788D7B085CBBE80E25F5 /* Pods_ChatApp.framework */; };
 		FBA502293EBE99A7D294FCCD /* Pods_ChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BAAB5414AB4567B157816 /* Pods_ChatAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		43D4CF631F9B87EE00558414 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43E27DA41F9259D50024816A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		43E27DA61F9259E30024816A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		43FC7BD31FB589870085DFB3 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		4C4BAAB5414AB4567B157816 /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F48B0722DFF0FE7CC6CBA34 /* Pods_ChatAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EB7A9C05FAC8C1D2A3D5B9 /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				4356DEA81FA31BAC00C5D634 /* AuthService.swift */,
+				43FC7BD31FB589870085DFB3 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				43E27DA51F9259D50024816A /* ChatVC.swift in Sources */,
 				4356DEAB1FA36DB800C5D634 /* roundedButtons.swift in Sources */,
 				43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */,
+				43FC7BD41FB589870085DFB3 /* UserDataService.swift in Sources */,
 				43152B561FA0C85F00F50CCF /* CreateAccountVC.swift in Sources */,
 				4356DEA91FA31BAC00C5D634 /* AuthService.swift in Sources */,
 				43152B541FA0C2FC00F50CCF /* LoginVC.swift in Sources */,
