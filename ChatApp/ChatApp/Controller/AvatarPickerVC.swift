@@ -72,6 +72,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         } else{
             UserDataService.instance.setAvatarName(avatarName: "light\(indexPath.item)")
         }
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
