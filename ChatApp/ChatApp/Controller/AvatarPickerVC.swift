@@ -64,7 +64,14 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cellDimension = ((collectionView.bounds.width - padding) - (numberOfColunms - 1) * spaceBetweenCells) / numberOfColunms
         
         return CGSize(width: cellDimension, height: cellDimension)
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if avatarType == .dark{
+            UserDataService.instance.setAvatarName(avatarName: "dark\(indexPath.item)")
+        } else{
+            UserDataService.instance.setAvatarName(avatarName: "light\(indexPath.item)")
+        }
     }
     
 }
