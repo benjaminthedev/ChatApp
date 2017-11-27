@@ -17,6 +17,9 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
+//Colours
+let smackPurplePlaceholder = #colorLiteral(red: 0, green: 0.01720350397, blue: 1, alpha: 1)
+
 //Segues
 
 let TO_LOGIN = "toLogin"
