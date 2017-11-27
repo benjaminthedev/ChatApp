@@ -25,6 +25,7 @@
 		43D4CF641F9B87EE00558414 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4CF631F9B87EE00558414 /* Constants.swift */; };
 		43E27DA51F9259D50024816A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E27DA41F9259D50024816A /* ChatVC.swift */; };
 		43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E27DA61F9259E30024816A /* ChannelVC.swift */; };
+		43EBC82D1FCBF9370018F82E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBC82C1FCBF9370018F82E /* CircleImage.swift */; };
 		43FC7BD41FB589870085DFB3 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FC7BD31FB589870085DFB3 /* UserDataService.swift */; };
 		8EC0AE2A2A0B17915DE3EA49 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E328788D7B085CBBE80E25F5 /* Pods_ChatApp.framework */; };
 		FBA502293EBE99A7D294FCCD /* Pods_ChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BAAB5414AB4567B157816 /* Pods_ChatAppTests.framework */; };
@@ -76,6 +77,7 @@
 		43D4CF631F9B87EE00558414 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43E27DA41F9259D50024816A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		43E27DA61F9259E30024816A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		43EBC82C1FCBF9370018F82E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		43FC7BD31FB589870085DFB3 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		4C4BAAB5414AB4567B157816 /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F48B0722DFF0FE7CC6CBA34 /* Pods_ChatAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +248,7 @@
 				43028BAB1F98845000E4E9BF /* GradientView.swift */,
 				4356DEAA1FA36DB800C5D634 /* roundedButtons.swift */,
 				436D95971FB9ED35006C1AD8 /* AvatarCell.swift */,
+				43EBC82C1FCBF9370018F82E /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				43E27DA51F9259D50024816A /* ChatVC.swift in Sources */,
 				436D95961FB9E8C1006C1AD8 /* AvatarPickerVC.swift in Sources */,
 				4356DEAB1FA36DB800C5D634 /* roundedButtons.swift in Sources */,
+				43EBC82D1FCBF9370018F82E /* CircleImage.swift in Sources */,
 				43E27DA71F9259E30024816A /* ChannelVC.swift in Sources */,
 				43FC7BD41FB589870085DFB3 /* UserDataService.swift in Sources */,
 				43152B561FA0C85F00F50CCF /* CreateAccountVC.swift in Sources */,
