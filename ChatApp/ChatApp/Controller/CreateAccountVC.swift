@@ -15,8 +15,10 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
-    
     @IBOutlet weak var userImg: UIImageView!
+    
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     //Vars
     var avatarName = "profileDefault"
@@ -27,6 +29,7 @@ class CreateAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,6 +45,10 @@ class CreateAccountVC: UIViewController {
     }
 
     @IBAction func createAccountPressed(_ sender: Any) {
+        //Spinner
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard let name = usernameTxt.text , usernameTxt.text != "" else{
             return
         }
@@ -59,7 +66,9 @@ class CreateAccountVC: UIViewController {
             if success {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
                     if success {
-                        //print("Logged In Users", AuthService.instance.authToken)
+                        self.spinner.isHidden = true
+                        self.spinner.stopAnimating()
+                        print("Logged In Users", AuthService.instance.authToken)
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
                                 print(UserDataService.instance.name,
@@ -97,6 +106,12 @@ class CreateAccountVC: UIViewController {
     
     func setupView(){
         usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        passTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+    
+        //Spinner
+        spinner.isHidden = true
+    
     }
     
 }

@@ -362,7 +362,7 @@
                                             <constraint firstAttribute="width" constant="250" id="hu3-Q8-L4F"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQB-aF-dZb">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQB-aF-dZb">
                                         <rect key="frame" x="0.0" y="100" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="JmB-OC-9c2"/>
@@ -408,6 +408,10 @@
                                     <action selector="pickBgColorPressed:" destination="8zM-Kn-ylT" eventType="touchUpInside" id="mvZ-j5-pIm"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-7C-C6C">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -417,11 +421,13 @@
                             <constraint firstItem="ROq-BP-4n8" firstAttribute="centerX" secondItem="5TY-wA-uqN" secondAttribute="centerX" id="5du-nn-oVb"/>
                             <constraint firstItem="K1K-Eg-IQt" firstAttribute="top" secondItem="mqs-v4-VkY" secondAttribute="top" constant="40" id="8pk-IU-aMR"/>
                             <constraint firstItem="o9h-uG-8i4" firstAttribute="top" secondItem="Mir-Mx-Syk" secondAttribute="bottom" constant="2" id="BUe-IU-Kpa"/>
+                            <constraint firstItem="5bd-7C-C6C" firstAttribute="centerX" secondItem="5TY-wA-uqN" secondAttribute="centerX" id="CK7-MB-Fta"/>
                             <constraint firstItem="Mir-Mx-Syk" firstAttribute="top" secondItem="IZK-aJ-piM" secondAttribute="top" id="DXS-jp-8d1"/>
                             <constraint firstItem="K1K-Eg-IQt" firstAttribute="centerX" secondItem="5TY-wA-uqN" secondAttribute="centerX" id="L2M-Po-7kO"/>
                             <constraint firstItem="IZK-aJ-piM" firstAttribute="top" secondItem="ROq-BP-4n8" secondAttribute="bottom" constant="41.5" id="Pwr-Ba-QwC"/>
                             <constraint firstItem="o9h-uG-8i4" firstAttribute="centerX" secondItem="5TY-wA-uqN" secondAttribute="centerX" id="XKx-IA-VBP"/>
                             <constraint firstItem="ROq-BP-4n8" firstAttribute="top" secondItem="K1K-Eg-IQt" secondAttribute="bottom" constant="40" id="Xdf-Mm-UGB"/>
+                            <constraint firstItem="5bd-7C-C6C" firstAttribute="centerY" secondItem="5TY-wA-uqN" secondAttribute="centerY" constant="-100" id="YJu-9I-zJM"/>
                             <constraint firstItem="mqs-v4-VkY" firstAttribute="trailing" secondItem="0tE-gg-eID" secondAttribute="trailing" constant="10" id="pF4-ko-TXZ"/>
                             <constraint firstItem="Ada-y3-Xjh" firstAttribute="centerX" secondItem="5TY-wA-uqN" secondAttribute="centerX" id="rQn-zs-BM8"/>
                             <constraint firstItem="0tE-gg-eID" firstAttribute="top" secondItem="mqs-v4-VkY" secondAttribute="top" id="uzB-XX-m4k"/>
@@ -432,6 +438,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="7Fb-TQ-vEQ" id="Qlp-RH-D5t"/>
                         <outlet property="passTxt" destination="yQB-aF-dZb" id="9Dv-5T-YWe"/>
+                        <outlet property="spinner" destination="5bd-7C-C6C" id="UVv-23-4QX"/>
                         <outlet property="userImg" destination="IZK-aJ-piM" id="eNA-jX-Niw"/>
                         <outlet property="usernameTxt" destination="qBp-Uc-AR5" id="D5d-us-dg9"/>
                         <segue destination="AIN-fM-Tno" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="dfP-hc-FUG"/>
